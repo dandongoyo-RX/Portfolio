@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Charles Dongoyo — VR, Games and 3D</title>
+  <meta name="description" content="Portfolio of Charles Dongoyo: VR and game development, 3D modelling and animation.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a href="#top" class="logo">CHARLES DONGOYO</a>
+    <a href="#contact" class="nav-link">Contact</a>
+  </header>
+
+  <main id="top">
+    <!-- Showreel: change src (and poster) to swap the clip at the top -->
+    <section class="reel" id="reel-wrap">
+      <video class="reel-video" id="reel" src="media/games/virtual-mining-tour.mp4" poster="media/games/virtual-mining-tour.jpg" data-start="1.1" autoplay muted loop playsinline></video>
+      <div class="reel-overlay">
+        <p class="label">VR / Game developer · 3D artist</p>
+        <h1>Worlds, built and <span class="hl">animated.</span></h1>
+      </div>
+      <button class="sound" id="sound" aria-label="Turn sound on">Sound off</button>
+    </section>
+
+    <section class="work" id="work">
+      <div class="tabs" role="tablist">
+        <button class="tab" role="tab" data-cat="games">VR / Game dev <span class="count"></span></button>
+        <button class="tab" role="tab" data-cat="art">3D / Animation <span class="count"></span></button>
+      </div>
+      <div class="grid" id="grid"></div>
+    </section>
+
+    <section class="contact" id="contact">
+      <p class="label">Contact</p>
+      <h2>Have a project in mind?</h2>
+      <a class="email" href="tel:+233591268594">+233 59 126 8594</a>
+      <div class="socials">
+        <a href="https://wa.me/233591268594" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://www.linkedin.com/in/charles-dongoyo-638554236" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.behance.net/charlesdongoyo" target="_blank" rel="noopener">Behance</a>
+        <a href="https://www.instagram.com/charles_de_3D/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">© <span id="year"></span> Charles Dongoyo</footer>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lb-btn lb-close" id="lb-close" aria-label="Close">×</button>
+    <button class="lb-btn lb-prev" id="lb-prev" aria-label="Previous">‹</button>
+    <div class="lb-stage" id="lb-stage"></div>
+    <button class="lb-btn lb-next" id="lb-next" aria-label="Next">›</button>
+    <div class="lb-info">
+      <h3 id="lb-title"></h3>
+      <p id="lb-caption"></p>
+      <p class="label" id="lb-count"></p>
+    </div>
+  </div>
+
+  <script src="projects.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
